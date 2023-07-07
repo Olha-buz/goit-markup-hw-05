@@ -647,7 +647,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap; 24px;
+    gap: 24px;
 }
 
 .email-footer {
@@ -679,7 +679,7 @@ section{
     justify-content: center;
     min-width: 165px;
     height: 40px;
-    padding: 8p 24px;
+    padding: 8px 24px;
     border: none;
     cursor: pointer;
     border-radius: 4px;
