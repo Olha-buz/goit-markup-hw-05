@@ -799,11 +799,7 @@ section{
 
 /*Form MODAL*/
 
-.div-modal-form{
-    display: flex;
-    flex-direction: column;
 
-}
 
 .title-modal {
     font-size: 16px;
@@ -819,12 +815,8 @@ section{
 
 
 .form-modal {
-    /*
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    */
 }
 
 .div-form-modal {
