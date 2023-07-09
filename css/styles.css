@@ -688,7 +688,7 @@ section{
     font-weight: 500;
     line-height: 1.5;
     font-size: 16px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     text-align: center;
     letter-spacing: 0.04em;
@@ -826,7 +826,7 @@ section{
     justify-content: flex-start;
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
@@ -850,7 +850,7 @@ section{
     border-radius: 4px;
     outline: transparent;
     background-color: transparent;
-    border: 1px solid var(--navy-blue-modal);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -867,7 +867,7 @@ section{
     width: 100%;
     height: 120px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.48px;
     color: rgba(46, 47, 66, 0.40);
     padding: 8px 16px;
@@ -875,17 +875,17 @@ section{
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-    border: 1px solid var(--navy-blue-modal);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-modal:focus,
 .input-modal:active {
-    border-color: var(--ocean);
+    border-color: var(--iris);
 }
 
 .input-modal:focus +.icon-input {
-    fill: var(--ocean);
+    fill: var(--iris);
 }
 
 
@@ -912,7 +912,7 @@ section{
     align-items: center;
     gap: 8px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.48px;
     color: var(--light-slate);
 }
@@ -933,15 +933,16 @@ section{
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border: 1px solid var(--navy-blue-modal);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-input:checked +.custom-checkbox  {
-    fill: var(--ocean);
+    fill: var(--cloud);
     border:none;
+    background-color: var(--ocean);
 }
 
 .icon-check {
