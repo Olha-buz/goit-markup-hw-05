@@ -905,6 +905,8 @@ section{
 
 .div-form-checkbox {
     margin-bottom: 24px;
+    display: flex;
+
 }
 
 .check-label {
@@ -912,14 +914,6 @@ section{
     line-height: 1.17;
     letter-spacing: 0.48px;
     color: var(--light-slate);
-}
-
-.check-input {
-    
-}
-
-.check-input:checked {
-    
 }
 
 .custom-checkbox {
@@ -937,18 +931,19 @@ section{
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-input:checked + .custom-checkbox  {
+.check-input:checked+.check-label .custom-checkbox  {
     fill: var(--cloud);
     border:none;
     background-color: var(--ocean);
 }
 
 .icon-check {
+    fill: var(--cloud);
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-input:checked+.custom-checkbox>.icon-check {
+.check-input:checked+.custom-checkbox > .icon-check {
     opacity: 1;
 }
 
