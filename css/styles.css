@@ -687,6 +687,10 @@ section{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;
     line-height: 1.5;
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    text-align: center;
     letter-spacing: 0.04em;
     color: var(--white, #FFF);
 }
@@ -695,13 +699,6 @@ section{
 .button-subscribe-footer:hover,
 .button-subscribe-footer:active {
     background-color: var(--ocean);
-}
-
-.text-subscribe {
-    font-size: 16px;
-    font-family: Roboto;
-    font-style: normal;
-    text-align: center;
 }
 
 .icon-teleg {
@@ -830,6 +827,9 @@ section{
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
     letter-spacing: 0.48px;
     color: var(--light-slate);
 }
@@ -840,19 +840,13 @@ section{
 
 .div-input-icon-modal {
     position: relative;
-}
-
-.title-lable-modal {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    
+   
 }
 
 .input-modal {
     width: 100%;
     height: 40px;
-    padding: 11px 38px;
+    padding: 11px 0px 11px 38px;
     border-radius: 4px;
     outline: transparent;
     background-color: transparent;
@@ -907,7 +901,7 @@ section{
     border-color: var(--iris);
 }
 
-/*CHECKBOX*/
+/*CHECKBOX 5th form element*/
 
 .div-form-checkbox {
     margin-bottom: 24px;
@@ -917,8 +911,6 @@ section{
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-top: 16px;
-    margin-bottom: 24px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.48px;
@@ -947,7 +939,7 @@ section{
                 fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-input:checked +.castom-checkbox  {
+.check-input:checked +.custom-checkbox  {
     fill: var(--ocean);
     border:none;
 }
@@ -957,12 +949,8 @@ section{
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-input:checked +.castom-checkbox  >.icon-check {
+.check-input:checked+.custom-checkbox>.icon-check {
     opacity: 1;
-}
-
-.p-check-label {
-   
 }
 
 .a-check-label {
