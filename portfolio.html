@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="webstudio" content="Effective Solutions
 for Your Business" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/modern-normalize.min.css" />
         <link rel="stylesheet" href="./css/styles.css" />
     <!--Fonts-->
@@ -21,33 +22,39 @@ for Your Business" />
     <!--Header-->
     <header class="headport">
         <div class="header container">
-        <!--Nav-->
-        <nav class="header-nav">
-            <a class="logo-link link" href="./index.html">Web<span
-                    class="logo-navy">Studio</span></a>
-            <ul class="header-list list">
-                <li>
-                    <a class="header-link link" href="./index.html">Studio</a>
-                </li>
-                <li>
-                    <a class="header-link active link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a class="header-link link" href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Address-->
-        <address class="address">
-            <ul class="address-list list">
-                <li>
-                    <a class="address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
-        </address>
+            <!--Nav-->
+            <nav class="header-nav">
+                <a class="logo-link link" href="./index.html">Web<span class="logo-navy">Studio</span></a>
+                <ul class="header-list list">
+                    <li class="header-link-line">
+                        <a class="header-link link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="header-link-line">
+                        <a class="header-link active link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="header-link-line">
+                        <a class="header-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle-icon" width="32" height="22">
+                    <use href="./images/icons.svg#hamburger"></use>
+                </svg>
+            </button>
+    
+            <!--Address-->
+            <address class="address">
+                <ul class="address-list list">
+                    <li>
+                        <a class="address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
         </div>
     </header>
 
@@ -58,19 +65,19 @@ for Your Business" />
             <h1 class="visually-hidden">Portfolio</h1>
         <!--Buttons-->
         <ul class="button-list list">
-            <li>
+            <li class="button-items">
                 <button class="button" type="button">All</button>
             </li>
-            <li>
+            <li class="button-items">
                 <button class="button" type="button">Web Site</button>
             </li>
-            <li>
+            <li class="button-items">
                 <button class="button" type="button">App</button>
             </li>
-            <li>
+            <li class="button-items">
                 <button class="button" type="button">Design</button>
             </li>
-            <li>
+            <li class="button-items">
                 <button class="button" type="button">Marketing</button>
             </li>
         </ul>
@@ -210,7 +217,7 @@ for Your Business" />
     </main>
 
     <!--Footer-->
-        <footer class="footer">
+    <footer class="footer">
             <div class="footer-block container">
                 <div class="logo-text-footer">
                     <a class="logo-link footer-link link" href="./index.html">Web<span class="logo-white">Studio</span></a>
@@ -266,8 +273,69 @@ for Your Business" />
                     </form>
                 </div>
             </div>
-        </footer>
+    </footer>
 
+    <!--Mobile-menu-header-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="close js-close-menu">
+                        <svg class="icon-modal" width="8" height="8">
+                            <use href="./images/icons.svg#close-black"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-all-links">
+                        <ul class="mobile-menu list">
+                            <li class="mm-list"><a class="header-link mm-link link" href="./index.html">Studio</a></li>
+                            <li class="mm-list"><a class="header-link mm-link active link" href="./portfolio.html">Portfolio</a></li>
+                            <li class="mm-list"><a class="header-link mm-link link" href="">Contacts</a></li>
+                        </ul>
+                
+                        <ul class="address-list-mobile list">
+                            <li class="mad-list">
+                                <a class="address-link-mobile active link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="mad-list">
+                                <a class="address-link-mobile link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                
+                        <ul class="icons-list-mobile list">
+                            <li class="list-for-iconfooter icons-mobile">
+                                <a href="" class="link-icon-footer" target="_blank">
+                                    <svg class="icon-footer" width="24" height="24">
+                                        <use href="./images/icons.svg#instagram1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-for-iconfooter icons-mobile">
+                                <a href="" class="link-icon-footer" target="_blank">
+                                    <svg class="icon-footer" width="24" height="24">
+                                        <use href="./images/icons.svg#twitter1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-for-iconfooter icons-mobile">
+                                <a href="" class="link-icon-footer" target="_blank">
+                                    <svg class="icon-footer" width="24" height="24">
+                                        <use href="./images/icons.svg#facebook1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="list-for-iconfooter icons-mobile">
+                                <a href="" class="link-icon-footer" target="_blank">
+                                    <svg class="icon-footer" width="24" height="24">
+                                        <use href="./images/icons.svg#linkedin1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                
+    </div>
+                
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+                    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+                    crossorigin="anonymous"></script>
+    <script defer src="./mobile-menu.js"></script>
 
 </body>
 </html>

@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <meta name="webstudio" content="Effective Solutions
 for Your Business"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
            <link rel="stylesheet" href="./css/modern-normalize.min.css">
            <link rel="stylesheet" href="./css/styles.css"/>
         <!--Fonts-->
@@ -19,7 +20,7 @@ for Your Business"/>
 
     <body>
         <!--Header-->
-        <header class="headport">
+       <header class="headport">
            <div class="header container">
             <!--Nav-->
             <nav class="header-nav">
@@ -36,6 +37,13 @@ for Your Business"/>
                     </li>
                 </ul>
             </nav>
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="menu-toggle-icon" width="32" height="22">
+                <use href="./images/icons.svg#hamburger"></use>
+              </svg>
+            </button>
+
             <!--Address-->
             <address class="address">
             <ul class="address-list list">
@@ -48,11 +56,12 @@ for Your Business"/>
             </ul>
             </address>
            </div>
-        </header>
+       </header>
+      
 
         <!--Main part-->
         <main>
-            <!--Section hello page-->
+            <!--Section hello page Section#1-->
             <section class="section-hero"> 
             <div class="div-hero container">
                 <h1 class="hero-title">
@@ -66,7 +75,7 @@ for Your Business"/>
             </section>
 
 
-            <!--Benefits-->
+            <!--Benefits Section#2-->
             <section class="section-benefits">
                 <div class="div-benefits container">
                  <h2 class="benefits-title visually-hidden">Benefits</h2>
@@ -120,7 +129,7 @@ for Your Business"/>
                 </div>
             </section>
 
-            <!--What we are doing-->
+            <!--What we are doing Section#3-->
             <section class="section-doing"> 
                <div class="container">
                  <h2 class="doing-title">What are we doing</h2>
@@ -138,7 +147,7 @@ for Your Business"/>
                </div>
             </section>
 
-            <!--Our team-->
+            <!--Our team Section#4-->
             <section class="section-our-team">
                 <div class="div-team container">
                 <h2 class="team-title">Our Team</h2>
@@ -319,7 +328,7 @@ for Your Business"/>
                </div>
             </section>
 
-            <!--Customers-->
+            <!--Customers Section#5-->
             <section class="section-customers">
                 <div class="div-customers container">
                     <h2 class="customers-title">Customers</h2>
@@ -502,6 +511,68 @@ for Your Business"/>
                </form>
           </div>
         </div>
+
+        <!--Mobile-menu-header-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="close js-close-menu">
+            <svg class="icon-modal" width="8" height="8">
+              <use href="./images/icons.svg#close-black"></use>
+            </svg>
+          </button>
+            <div class="mobile-all-links">
+             <ul class="mobile-menu list">
+               <li class="mm-list"><a class="header-link mm-link active link" href="./index.html">Studio</a></li>
+               <li class="mm-list"><a class="header-link mm-link link" href="./portfolio.html">Portfolio</a></li>
+               <li class="mm-list"><a class="header-link mm-link link" href="">Contacts</a></li>
+             </ul>
+
+             <ul class="address-list-mobile list">
+                   <li class="mad-list">
+                      <a class="address-link-mobile active link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                   </li>
+                   <li class="mad-list">
+                      <a class="address-link-mobile link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                   </li>
+             </ul>
+
+             <ul class="icons-list-mobile list">
+              <li class="list-for-iconfooter icons-mobile">
+                <a href="" class="link-icon-footer" target="_blank">
+                  <svg class="icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#instagram1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-for-iconfooter icons-mobile">
+                <a href="" class="link-icon-footer" target="_blank">
+                  <svg class="icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-for-iconfooter icons-mobile">
+                <a href="" class="link-icon-footer" target="_blank">
+                  <svg class="icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-for-iconfooter icons-mobile">
+                <a href="" class="link-icon-footer" target="_blank">
+                  <svg class="icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin1"></use>
+                  </svg>
+                </a>
+              </li>
+             </ul>
+            </div>
+
+        </div>   
+ 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="./mobile-menu.js"></script>
      <script src="./modal.js"></script>
     </body>
 </html>
